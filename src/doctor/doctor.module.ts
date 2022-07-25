@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { PatientRecordComponent } from './consultation/patient-record/patient-record.component';
 import { ViewRecordComponent } from './view-record/view-record.component';
 import { RecordComponent } from './view-record/record/record.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,6 @@ import { RecordComponent } from './view-record/record/record.component';
     RecordComponent,
     
   ],
-  imports: [CommonModule,FormsModule, DoctorRoutingModule, UtilsModule],
+  imports: [CommonModule,FormsModule, DoctorRoutingModule, UtilsModule,HttpClientModule],
 })
 export class DoctorModule {}

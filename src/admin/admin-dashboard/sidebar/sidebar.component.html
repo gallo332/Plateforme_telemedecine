@@ -2,7 +2,7 @@
   [ngClass]="{collapse: isCollapsed}">
   <div class="position-sticky pt-3">
     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-      <span>Management</span>
+      <!-- <span>Management</span> -->
       <a class="link-secondary" href="#" aria-label="User Management">
         <span data-feather="plus-circle"></span>
       </a>
@@ -15,7 +15,7 @@
 
       <li class="list-main mb-1">
         <button class="btn btn-dash align-items-center rounded collapsed" [routerLink]="'doctor'">
-          <i class="fas fa-user-md"></i>&nbsp;&nbsp;Doctor
+          <i class="fas fa-user-md"></i>&nbsp;&nbsp;Médecin
         </button>
       </li>
 
@@ -28,13 +28,13 @@
       <li class="list-main mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
           data-bs-target="#orders-collapse" aria-expanded="false">
-          Staff
+          Personnel
         </button>
         <div class="collapse" id="orders-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-plus"></i> &nbsp;Add New Staff</a></li>
-            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-edit"></i> &nbsp;Edit Staff</a></li>
-            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-times"></i> &nbsp;Remove Staff</a></li>
+            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-plus"></i> &nbsp;Add New Personnel</a></li>
+            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-edit"></i> &nbsp;Edit Personnel</a></li>
+            <li><a href="#" class="link-dark rounded"><i class="fas fa-user-times"></i> &nbsp;Remove Personnel</a></li>
             <li><a href="#" class="link-dark rounded"><i class="fas fa-user-minus"></i> &nbsp;Change Role</a></li>
           </ul>
         </div>

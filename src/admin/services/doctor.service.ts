@@ -39,7 +39,8 @@ export class DoctorService {
     private blockChainService: BlockchainService,
     private ipfsService: IpfsService,
     private http: HttpClient
-  ) {
+  ) 
+  {
     //GET BlockChain Service
     this.web3 = blockChainService.getWeb3();
 

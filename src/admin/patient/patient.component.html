@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="container mb-4">
     <form [noValidate]="false" #docForm="ngForm" (ngSubmit)="onSubmit()">
-      <h3 class="h3 my-3">Add Patient to the Network</h3>
+      <h3 class="h3 my-3">Accorder l'accès à un patient</h3>
       <div class="row form-row">
         <div class="col-12 col-sm-6">
           <div class="form-group">
@@ -38,21 +38,21 @@
         </div>
         <div class="col-12 col-sm-6">
           <div class="form-group">
-            <label>City<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+            <label>Ville<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
             <input [(ngModel)]="model.city" name="city" id="city" type="text" class="form-control" placeholder="city"
               required />
           </div>
         </div>
         <div class="col-12 col-sm-6">
           <div class="form-group">
-            <label>State</label>
+            <label>Etat</label>
             <input [(ngModel)]="model.state" name="state" id="state" type="text" class="form-control"
               placeholder="state" />
           </div>
         </div>
       </div>
       <button type="submit" id="btn" class="btn btn-primary mb-3">
-        Add Patient
+        Accès permis
       </button>
     </form>
   </div>

@@ -5,9 +5,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   template: `
     <header class="navbar sticky-top mt-4 flex-md-nowrap p-0 shadow">
       <a
-        class="navbar-brand col-md-2 col-lg-2 px-3 text-white fs-bold"
-        href="#"
-        >EHR Hospital</a
+        class="navbar-brand col-md-2 col-lg-2 px-3 logo"
+        href="#">
+        <!-- EHR Hospital -->
+        <img src="assets/images/logos.png" class="img-fluid"  alt="">
+        </a
       >
       <button
         class="navbar-toggler d-md-none"

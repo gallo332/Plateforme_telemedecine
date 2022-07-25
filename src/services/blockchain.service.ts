@@ -21,6 +21,8 @@ export class BlockchainService {
   abi: any;
 
   admin: any;
+  patient:any;
+  doctor:any;
 
   balance: any;
 
@@ -61,6 +63,22 @@ export class BlockchainService {
               this.admin = r;
             });
           console.log(this.admin);
+
+          // this.contract.methods
+          //   .getDr()
+          //   .call()
+          //   .then((r: any) => {
+          //     this.doctor = r;
+          //   });
+          // console.log(this.doctor);
+
+          // this.contract.methods
+          //   .getPt()
+          //   .call()
+          //   .then((r: any) => {
+          //     this.patient = r;
+          //   });
+          // console.log(this.patient);
         }
       });
       window.ethereum.on('accountsChanged', (acc:any) => {

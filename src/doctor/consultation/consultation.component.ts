@@ -9,11 +9,11 @@ import { DoctorService } from '../services/doctor.service';
 })
 export class ConsultationComponent implements OnInit {
   model: any = {
-    patID: '',
+    patID: '0x00000000000000000000000000000000000000000',
   };
 
   //TODO
-  isPatient: boolean = false;
+  isPatient: boolean = true;
 
   PatientDetails: any = {};
 

@@ -1,0 +1,55 @@
+
+<div class="container-fluid">
+    <div class="container">
+      <div class="head">Patient Dashboard</div>
+      <hr>
+      <div class="content" >
+        <div class="card mt-2">
+          <button class="btn py-1 px-2"><i class="fas fa-edit"></i> Edit</button>
+          <div class="doctor w-100 p-2 d-flex flex-row align-items-center">
+            <!-- <div class="doc-image">
+              <img class="border border-1 border-secondary rounded-circle p-1"
+                [src]='PatientDetails.imageHash || "../../../assets/images/doctor.png"' alt="Doctor Image" width="150px"
+                height="150px">
+            </div> -->
+            <div class="doc-info d-flex flex-column">
+              <div class="col">
+                <div class="row py-2">
+                  <div class="col-md-12">
+                    <b>PatID: </b> <span class="docID"> <b>{{PatientDetails.ptID}}</b></span>
+                  </div>
+                </div>
+                <div class="row-md-12 d-flex flex-row justify-content-between">
+                  <div class="col-md-12 d-flex flex-column">
+                    <div>
+                      <b>Full Name : </b> <span class="fName">{{PatientDetails.fName}} {{PatientDetails.lName}}</span></div>
+                    <!-- <div>
+                      <b>Date of Joining : </b> <span class="Doj">{{PatientDetails.Doj}}</span>
+                    </div> -->
+                    <div>
+                      <b>Speciality: </b><span class="speciality">{{PatientDetails.speciality}}</span>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-12 d-flex flex-column">
+                    <!-- <div>
+                      <b>Email : </b><span class="emailID">{{PatientDetails.emailID}}</span></div> -->
+                    <div>
+                      <b>Phone: </b><span class="phone">{{PatientDetails.mobile}}</span>
+                    </div>
+                    <div>
+                      <b>City: </b><span class="city">{{PatientDetails.ville}}</span>
+                    </div>
+                    <div>
+                      <b>status: </b><span class="state">{{PatientDetails.etat}}</span>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -21,3 +21,9 @@
   box-shadow: none;
   color: rgb(158, 158, 158);
 }
+.logo{
+  display: inline-block;
+    margin-right: 30px;
+    width: 160px;
+} 
+    

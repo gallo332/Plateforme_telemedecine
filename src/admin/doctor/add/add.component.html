@@ -7,7 +7,7 @@
             <img class="image rounded-circle" [src]=" image_url || '../../../assets/images/doctor.png'" alt="user"
               width="150px">
             <div class="img-c mb-3 mt-3 col-md-6 d-flex flex-column">
-              <label class="form-label text-center" for="formFile">Select Doctor image</label>
+              <label class="form-label text-center" for="formFile">Selection l'image du médecin</label>
               <input class="img-chooser form-control" type="file" id="formFile" (change)="PreviewImage($event)">
             </div>
           </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="col-12">
           <div class="form-group">
-            <label>Date of Joining<sup class="fas fa-asterisk fw-normal text-danger"
+            <label>Date d'adhésion<sup class="fas fa-asterisk fw-normal text-danger"
                 style="font-size: 8px;"></sup></label>
             <div class="cal-icon">
               <input [(ngModel)]="model.Doj" name="Doj" id="dob" type="date" class="form-control"
@@ -56,35 +56,35 @@
 
         <div class="col-12">
           <div class="form-group">
-            <label>Doctor Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+            <label>Médecin Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
             <input [(ngModel)]="model.docID" name="docID" id="accid" type="text" class="form-control"
               placeholder="doctor account id" required />
           </div>
         </div>
         <div class="col-12 col-sm-6">
           <div class="form-group">
-            <label>City<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+            <label>Ville<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
             <input [(ngModel)]="model.city" name="city" id="city" type="text" class="form-control" placeholder="city"
               required />
           </div>
         </div>
         <div class="col-12 col-sm-6">
           <div class="form-group">
-            <label>State</label>
+            <label>Etat</label>
             <input [(ngModel)]="model.state" name="state" id="state" type="text" class="form-control"
               placeholder="state" />
           </div>
         </div>
         <div class="col-12 col-sm-6">
           <div class="form-group">
-            <label>Speciality<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+            <label>Spécialité<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
             <input [(ngModel)]="model.speciality" name="speciality" id="spec" type="text" class="form-control"
               placeholder="specialties" required />
           </div>
         </div>
       </div>
       <button type="submit" id="btn" class="btn btn-primary">
-        Add Doctor</button>
+        Ajouter Médecin</button>
     </form>
   </div>
   <app-progress_card [success]="success" [show]="show" [msg_text]="msg_text" [warn]="warn" (retry)="onAddDocSubmit()" (close)="onClose()">

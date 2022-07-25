@@ -1,10 +1,10 @@
 <div class="overlay" [hidden]="isDoctor">
 </div>
-<app-progress_card [show]="!isDoctor" [msg_text]="progressMsg" [warn]="progressWarn" (retry)="onCheckDoctor()"></app-progress_card>
+<app-progress_card [success]="isDoctor && checkProgress"  [show]="!isDoctor" [msg_text]="progressMsg" [warn]="progressWarn" (retry)="onCheckDoctor()"></app-progress_card>
 
 <div class="dashboard"></div>
 
-<doctor-header (onCollapse)="isCollapse = !isCollapse"></doctor-header>
+<doctor-header (onCollapse)="isCollapse = isCollapse"></doctor-header>
 
 <div class="container-fluid m-0">
   <div class="row m-0">
